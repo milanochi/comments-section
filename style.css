@@ -532,12 +532,11 @@ h4{
     }
     .content__flex-form{
         width: 400px;
-        height: 90%;
-        min-height: 130px;
+        min-height: 150px;
     }
     .content__input {
         flex-basis: 78%;
-        height: 40%;
+        height: 100%;
        
     }
     .btn-submit{
@@ -619,9 +618,5 @@ h4{
     .content__actions img{
        margin-right: 5px;
     }
-    .content__input {
-        flex-basis: 78%;
-        height: 20px;
-        margin-bottom: 30px;
-    }
+
 }
