@@ -1,3 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700;800;900&family=Montserrat:wght@300;500;700;800&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@500&family=Rubik:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    /* padding: 0;
+    margin: 0; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Poppins';
+   
+}
+textarea{
+    font-size: 1rem
+}
+#hero{
+    background-image: url('/assets/Hero img/Rema.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+#hero2{
+    background-image: url('/assets/Events Page/shop facad 1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#info img{
+    max-width: 220px;
+ 
+}
+
+@media (max-width: 760px) {
+    .line,
+    .lineup{
+        display: none;
+    }
+   
+}
+::placeholder{
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+
+}
+
+.logo{
+    max-width: 100px;
+}
+.line{
+   height: 32px;
+   width: 1px;
+   border-left: 2px solid #B97B1B;
+
+}
+.lineup{
+    height: 1px;
+    width: 30px;
+    border-bottom: 2px solid white;
+    margin-top: 12px;
+ }
+.hamburger{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+#menu{
+    z-index: 1000;
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: white;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+.hamburger-middle{
+    transform: translateY(7px);
+}
+.hamburger-bottom{
+    transform: translateY(14px);
+}
+.open{
+    transform: rotate(90deg);
+    transform: translateY(0);
+}
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.open .hamburger-middle{
+    display: none;
+}
+.open .hamburger-bottom{
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+.footerLogo{
+    max-width: 150px;
+}
+#footerLog{
+    max-width: 100px;
+}
+.circle{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #B97B1B;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn{
+    position: absolute;
+    height: auto;
+}
+.navlinks:hover{
+        text-decoration: underline 1px solid grey;
+}
+.box1{
+    background-image: url('/assets/Events Page/img1.png');
+    background-size:100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.box2{
+    background-image: url('/assets/Events Page/img2.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.box3{
+    background-image: url('/assets/Events Page/img3.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.box{
+    height: 220px;
+    width: 220px;
+    border-radius: 20px;
+    /* border: 1px normal rgba(128, 128, 128, 0.452); */
+}
+
+#mainbox{
+    border: 1px normal rgba(128, 128, 128, 0.452);
+}
+.innerbox{
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid rgba(128, 128, 128, 0.452);
+    z-index: 100;
+}
+#copyright{
+    border-top: 1px solid white;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -272,8 +441,6 @@ h4{
     border: 1px solid rgba(204, 202, 202, 0.473);
     resize: none;
    
-   
-
 }
 .content__input:focus{
         outline: none;
@@ -309,7 +476,7 @@ h4{
     appearance: none;
     font-family: Rubik;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 
 
@@ -365,11 +532,13 @@ h4{
     }
     .content__flex-form{
         width: 400px;
-        height: 150px;
+        height: 90%;
+        min-height: 130px;
     }
-    .content__input{
+    .content__input {
         flex-basis: 78%;
-        height: 100px;
+        height: 40%;
+       
     }
     .btn-submit{
             position: absolute;
@@ -449,5 +618,10 @@ h4{
     }
     .content__actions img{
        margin-right: 5px;
+    }
+    .content__input {
+        flex-basis: 78%;
+        height: 20px;
+        margin-bottom: 30px;
     }
 }

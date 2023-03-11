@@ -5,7 +5,7 @@ const VIEW_COMMENT = document.getElementById('view-comments')
 const ID_COMMENT = document.getElementById('commentId');
 const wrap = document.getElementById('wrapper');
 
-const username = prompt('Enter username', '')
+const username = prompt('Enter username', 'default name')
     reply.addEventListener('click', () =>{
     const comment = document.createElement('div');
     comment.classList.add('content__main');
