@@ -38,8 +38,11 @@ const username = prompt('Enter username', 'default name')
     button.addEventListener('click', (e) =>{
         e.preventDefault();
             
-        if(textarea.value !== '' || textarea.value !== null){
-            comment.remove();
+        if(textarea.value === '' || textarea.value === null){
+                alert('Enter a Reply')
+        }
+        else {
+         comment.remove();
         const NEW_COMMENT = document.createElement('div');
         NEW_COMMENT.classList.add('content__main');
         const flex = document.createElement('div');
@@ -118,18 +121,21 @@ const username = prompt('Enter username', 'default name')
         NEW_COMMENT.append(flex);
         MN_COMMENT.append(NEW_COMMENT)
         }
-        else{
-            console.log("Empty value")
-        }
+    
+      
     })
     form.append(button);
     comment.append(inner)
     MN_COMMENT.append(comment)
 
 })
-MY_COMMENT.addEventListener('click', () =>{
+MY_COMMENT.addEventListener('click', () => {
     console.log('helol');
-   
+   if(ID_COMMENT.value === '' || ID_COMMENT.value === null){
+       alert('Enter a Comment')
+   }
+   else {
+
     const myComment = document.createElement('div');
     myComment.classList.add('content__main');
     const MC_INNER = document.createElement('div');
@@ -196,6 +202,7 @@ MY_COMMENT.addEventListener('click', () =>{
         commentInput.style.border = 'none';
         commentInput.removeAttribute('readonly');
         updateBtn.style.backgroundColor = 'hsl(238, 40%, 52%)';
+        return
 
     }
     edit.addEventListener('click', editContent)
@@ -253,7 +260,7 @@ MY_COMMENT.addEventListener('click', () =>{
     commentInput.classList.add('comment-input');
     commentInput.type = 'text';
    
-    commentInput.style.minHeight= '80px'
+    commentInput.style.minHeight= '20px'
     commentInput.value = ID_COMMENT.value;
     ID_COMMENT.value = '';
     commentInput.setAttribute('readonly', 'readonly');
@@ -278,4 +285,5 @@ MY_COMMENT.addEventListener('click', () =>{
     MC_INNER.append(contentUpdate);
     myComment.append(MC_INNER);
     VIEW_COMMENT.append(myComment);
+}
 })

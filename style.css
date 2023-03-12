@@ -198,6 +198,7 @@ textarea{
 }
 .content__main{
     min-height: 150px;
+    
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -209,22 +210,19 @@ textarea{
     width: 600px;
     border-radius: 10px;
     background-color: white;
-    /* min-height: 80px; */
    padding: 20px 30px 20px 70px;
     flex-direction: column;
-    /* margin-top: 2rem;
-    margin-bottom: 2rem; */
     position: relative;
     /* box-shadow: 1px 2px 5px 1px grey; */
-    height: 100%;
+    min-height: 100px;
 }
 .content__inner2{
     display: flex;
     width: 530px;
     border-radius: 10px;
     background-color: white;
-    height: 100%;
-   padding: 20px 30px 20px 70px;
+    min-height: 200px;
+   padding: 20px 30px;
     flex-direction: column;
     margin-right: -4.5rem;
     position: relative;
@@ -476,6 +474,7 @@ h4{
     appearance: none;
     font-family: Rubik;
     width: 100%;
+    margin-bottom: 1rem;
     /* height: 100%; */
 }
 
@@ -508,17 +507,18 @@ h4{
     }
     .content p{
         margin-top: .5rem;
+        margin-bottom: 2rem;
     }
     .content__inner{
         padding-left: 25px;
         padding-right: 25px;
-        height: 220px;
+        min-height: 200px;
         width: 350px;
     }
     .content__inner2{
         padding-left: 25px;
         padding-right: 25px;
-        height: 220px;
+        min-height: 100px;
         width: 350px;
         margin: 0;
     }
@@ -536,7 +536,7 @@ h4{
     }
     .content__input {
         flex-basis: 78%;
-        height: 100%;
+        height: 100px;
        
     }
     .btn-submit{
@@ -560,13 +560,13 @@ h4{
     }
     .content__icon2{
         position: absolute;
-        top: 84%;
+        top: 75%;
         right: 10%;
 
     }
     .content__icon1{
         position: absolute;
-        top: 84%;
+        top: 75%;
         right: 30%;
 
     }
@@ -574,10 +574,16 @@ h4{
         justify-content: flex-start;
         margin-top: 1.2rem;
     }
+    .comment-input{
+        min-height: 50px;
+    }
 
 }
 
 @media (max-width: 375px) {
+    .comment-input{
+        min-height: 50px;
+    }
     .content__main{
         min-height: 250px;
     }
