@@ -98,29 +98,29 @@ const username = prompt('Enter username', 'default name')
         flex.append(replies)
         contentBox2.append(period)
         
-        // const votes = document.createElement('div');
-        // votes.classList.add('content__votes')
-        // const voteInner = document.createElement('div');
-        // voteInner.classList.add('content__vote-box2');
-        // votes.append(voteInner);
+        const votes = document.createElement('div');
+        votes.classList.add('content__votes')
+        const voteInner = document.createElement('div');
+        voteInner.classList.add('content__vote-box');
+        votes.append(voteInner);
 
-        // const minus = document.createElement('span');
-        // minus.classList.add('content__minus');
-        // minus.textContent = '-'
-        // voteInner.append(minus)
+        const minus = document.createElement('span');
+        minus.classList.add('content__minus');
+        minus.textContent = '-'
+        voteInner.append(minus)
 
-        // const num = document.createElement('span');
-        // num.classList.add('content__number');
-        // num.textContent = '10'
-        // voteInner.append(num);
+        const num = document.createElement('span');
+        num.classList.add('content__number');
+        num.textContent = '10'
+        voteInner.append(num);
 
-        // const plus = document.createElement('span');
-        // plus.classList.add('content__plus');
-        // plus.textContent = '+'
-        // voteInner.append(plus)
+        const plus = document.createElement('span');
+        plus.classList.add('content__plus');
+        plus.textContent = '+'
+        voteInner.append(plus)
 
         
-        // flex.append(votes)
+        flex.append(votes)
         NEW_COMMENT.append(flex);
         MN_COMMENT.append(NEW_COMMENT)
         }
