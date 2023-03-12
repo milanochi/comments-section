@@ -491,6 +491,7 @@ h4{
         
         top: 78%;
         left: 8%;
+       
         
     }
     .content__vote-box{
@@ -498,7 +499,7 @@ h4{
         height: 30px;
         width: 90px;
         align-items: center;
-    }
+    } 
     .content__icon{
         position: absolute;
         top: 82%;
@@ -512,7 +513,7 @@ h4{
     .content__inner{
         padding-left: 25px;
         padding-right: 25px;
-        min-height: 200px;
+        min-height: 100%;
         width: 350px;
     }
     .content__inner2{
@@ -587,18 +588,18 @@ h4{
     .content__main{
         min-height: 250px;
     }
-    .content__votes{
+    /* /* .content__votes{
         
         top: 80%;
         left: 8%;
         
-    }
+    } */
     .content__vote-box{
         flex-direction: row;
         height: 30px;
         width: 90px;
         align-items: center;
-    }
+    } 
     .content__icon{
         position: absolute;
         top: 83%;
