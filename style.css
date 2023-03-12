@@ -513,7 +513,7 @@ h4{
     .content__inner{
         padding-left: 25px;
         padding-right: 25px;
-        min-height: 100%;
+        min-height: 100px;
         width: 350px;
     }
     .content__inner2{
