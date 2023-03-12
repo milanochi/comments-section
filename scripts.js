@@ -4,7 +4,7 @@ const MY_COMMENT = document.getElementById('my-comments')
 const VIEW_COMMENT = document.getElementById('view-comments')
 const ID_COMMENT = document.getElementById('commentId');
 const wrap = document.getElementById('wrapper');
-
+let userReply = document.getElementById('userreply').innerHTML;
 const username = prompt('Enter username', 'default name')
     reply.addEventListener('click', () =>{
     const comment = document.createElement('div');
@@ -24,7 +24,7 @@ const username = prompt('Enter username', 'default name')
     const textarea = document.createElement('textarea');
     textarea.classList.add('content__input');
     textarea.type="text";
-    textarea.placeholder="Add a comment";
+    textarea.placeholder="Add a reply";
     textarea.cols='20';
     textarea.rows='4';
     form.append(textarea);
@@ -90,8 +90,11 @@ const username = prompt('Enter username', 'default name')
         // contentBox.append(icon);
         const replies = document.createElement('p');
         replies.classList.add('p');
-        replies.textContent= textarea.value;
-      
+       const replyingTo = document.createElement('span');
+        replyingTo.style.color = 'hsl(238, 40%, 52%)'
+        replyingTo.textContent = `@${userReply} `
+        replies.textContent= `${textarea.value}`;
+        replies.prepend(replyingTo)
         flex.append(replies)
         contentBox2.append(period)
         

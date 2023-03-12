@@ -465,7 +465,7 @@ h4{
 }
 .comment-input{
     margin-top: 1rem;
-    font-size: .8em;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     padding-right: 30px;
@@ -475,7 +475,7 @@ h4{
     font-family: Rubik;
     width: 100%;
     margin-bottom: 1rem;
-    /* height: 100%; */
+    
 }
 
 
@@ -560,13 +560,13 @@ h4{
     }
     .content__icon2{
         position: absolute;
-        top: 75%;
+        top: 76%;
         right: 10%;
 
     }
     .content__icon1{
         position: absolute;
-        top: 75%;
+        top: 76%;
         right: 30%;
 
     }
