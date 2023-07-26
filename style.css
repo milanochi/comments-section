@@ -249,12 +249,11 @@ textarea{
   background-color: white;
   font-size: .9em;
   border-radius: 15px;
-  animation: popup .7s ease-in-out forwards;
+  transform: scale(.8);
+  animation: popup .3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  font-family: 'Poppins';
 }
 @keyframes popup {
-    0%{
-        transform: scale(0)
-    }
     100%{
         transform: scale(1)
     }
@@ -465,14 +464,14 @@ h4{
 }
 .comment-input{
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: .8em;
     font-weight: 400;
     line-height: 1.5;
     padding-right: 30px;
     border: none;
     outline: none;
     appearance: none;
-    font-family: Rubik;
+    font-family:'Poppins';
     width: 100%;
     margin-bottom: 1rem;
     
